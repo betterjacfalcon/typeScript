@@ -9,7 +9,10 @@
     //Declaracion de let frash */
     flash = {
         name: 'Clark Kent',
-        power: ['Super Fuerza']
+        power: ['Super Fuerza'],
+        getName() {
+            return this.name;
+        }
     };
     console.log(flash);
 })();
