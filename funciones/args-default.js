@@ -8,6 +8,6 @@
             return `${firstName} ${lastName || '----'}`;
         }
     };
-    const name = fullName('tony', 'rodriguez', true);
+    const name = fullName('tony');
     console.log(name);
 })();
