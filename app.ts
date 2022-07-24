@@ -1,4 +1,4 @@
-
+(( ) => {
 // Objetos
 type Car = {
   carroceria:string,
@@ -69,8 +69,11 @@ const apocalipsis:Mutante2 = {
   miembros: ["Magneto","Tormenta","Psylocke","Angel"]
 }
 
+console.log({apocalipsis});
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 let mystique:Mutante1|Mutante2 ;
 
 mystique = charles;
 mystique = apocalipsis;
+
+})( )

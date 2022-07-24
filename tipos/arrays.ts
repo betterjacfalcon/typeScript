@@ -9,5 +9,6 @@
 
     const apellidos: string[] = ['carvajal','aguilar','rodriguez','velasquez'];
     apellidos.forEach(a => console.log(a.toUpperCase()));
-    
+
+      
 })( )
