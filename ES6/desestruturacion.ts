@@ -26,4 +26,9 @@
 
     printHeroes(heroes);
 
+    const heroesArreglo :[string, boolean, number]= ['Hulks', true, 2];
+
+    const [, superman, ] = heroesArreglo;
+    console.log({superman});
+
 })()

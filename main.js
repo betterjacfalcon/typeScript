@@ -23,6 +23,9 @@ var __rest = (this && this.__rest) || function (s, e) {
         console.log(nick, resto);
     };
     printHeroes(heroes);
+    var heroesArreglo = ['Hulks', true, 2];
+    var superman = heroesArreglo[1];
+    console.log({ superman: superman });
 })();
 (function () {
     var nombre = 'alejandra';
