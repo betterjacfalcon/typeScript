@@ -28,6 +28,26 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log({ superman: superman });
 })();
 (function () {
+    var superman = {
+        name: 'Klan Ken',
+        weapon: 'Volar'
+    };
+    var batman = {
+        name: 'Alejandra',
+        weapon: 'Vampiro'
+    };
+    var hulk = {
+        name: 'Martin',
+        weapon: 'Piedras'
+    };
+    var heroes = [superman, batman, hulk];
+    for (var _i = 0, heroes_1 = heroes; _i < heroes_1.length; _i++) {
+        var heroe = heroes_1[_i];
+        console.log(heroe);
+        console.log(heroe.name, heroe.weapon);
+    }
+})();
+(function () {
     var nombre = 'alejandra';
     var getName = function () {
         console.log('viejo get name');
