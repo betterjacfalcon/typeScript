@@ -1,4 +1,19 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -10,6 +25,32 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
+(function () {
+    var Heroes = (function () {
+        function Heroes(name, power) {
+            if (name === void 0) { name = 'no name'; }
+            if (power === void 0) { power = 0; }
+            this.name = name;
+            this.power = power;
+        }
+        return Heroes;
+    }());
+    var FlyHeroes = (function (_super) {
+        __extends(FlyHeroes, _super);
+        function FlyHeroes(name, power) {
+            if (name === void 0) { name = 'no name'; }
+            if (power === void 0) { power = 1; }
+            var _this = _super.call(this, name, power) || this;
+            _this.flying = true;
+            return _this;
+        }
+        return FlyHeroes;
+    }(Heroes));
+    var hulk = new Heroes('Hulk', 9001);
+    var falcon = new FlyHeroes('falcon', 50);
+    console.log(hulk);
+    console.log(falcon);
+})();
 (function () {
     var heroes = {
         nick: 'Samuel Jackson',
